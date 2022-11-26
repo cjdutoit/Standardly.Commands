@@ -24,10 +24,11 @@ You setup the client and then you can either pass in a single command OR a list 
 **OR**
 
 ```cs
-    List<string> commands = executions
-        .Select(execution => execution.Instruction).ToList();
-
-    . . .
+    List<string> commands = 
+        new List<string>
+        {
+            "echo Hello World!"
+        };
 
     using (CommandClient commandClient = new CommandClient("cmd.exe"))
     {
