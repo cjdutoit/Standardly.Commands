@@ -4,8 +4,7 @@
 // See License.txt in the project root for license information.
 // ---------------------------------------------------------------
 
-using Standardly.Core.Services;
+using Standardly.Commands.Services;
 
 var scriptGenerationService = new ScriptGenerationService();
 scriptGenerationService.GenerateBuildScript();
-scriptGenerationService.GenerateProvisionScript();
